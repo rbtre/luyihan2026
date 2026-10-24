@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#d40853" />
+      <stop offset="100%" stop-color="#9e0038" />
+    </radialGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#4a0018" flood-opacity="0.45" />
+    </filter>
+  </defs>
+  <!-- Rounded Wax-Seal / Badge Base -->
+  <rect x="4" y="4" width="56" height="56" rx="15" fill="url(#bg)" />
+  <rect x="7.5" y="7.5" width="49" height="49" rx="12" fill="none" stroke="#ffd762" stroke-opacity="0.42" stroke-width="1.2" />
+  <!-- 3D Faceted Tetrahedron Sculpture -->
+  <g filter="url(#shadow)">
+    <!-- Left-Upper Facet (Light Gold) -->
+    <polygon points="32,13 15,43 32,35" fill="#ffd762" />
+    <!-- Right-Upper Facet (Warm Gold) -->
+    <polygon points="32,13 49,43 32,35" fill="#ffc30c" />
+    <!-- Bottom Facet (Rose Pink) -->
+    <polygon points="15,43 49,43 32,35" fill="#ff6b93" />
+    <!-- Crisp Center Ridge Highlights -->
+    <polyline points="32,13 32,35 15,43" fill="none" stroke="#fffdf7" stroke-opacity="0.55" stroke-width="1" stroke-linejoin="round" />
+    <line x1="32" y1="35" x2="49" y2="43" stroke="#fffdf7" stroke-opacity="0.35" stroke-width="1" stroke-linecap="round" />
+  </g>
+</svg>
+
